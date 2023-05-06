@@ -1,12 +1,12 @@
 import React, {useState} from 'react'
 import {ToastContainer, toast} from 'react-toastify';
 
-
 import ChoiceBuilding from "./choiceBuilding.jsx";
 import ChoiceFloor from "./choiceFloor.jsx";
 import ChoiceRoom from "./choiceRoom.jsx";
 import ChoiceTime from "./choiceTime.jsx";
-import choiceTime from "./choiceTime.jsx";
+
+import { useForm } from 'react-hook-form';
 
 
 class Form extends React.Component {
@@ -53,6 +53,7 @@ class Form extends React.Component {
     }
 
     render() {
+
         return (
             <form ref='form' className={'form'} name={'test'} onSubmit={this.handleSubmit.bind(this)} onReset={this.handleFormReset.bind(this)}>
                 <fieldset className={'fieldset'}>
