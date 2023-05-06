@@ -31,9 +31,10 @@ class ChoiceFloor extends React.Component{
         const options = this.renderOption();
         return(
             <Select name={'floor'}
+                    required={'required'}
                     onChange={this.handlerChange.bind(this)}
                     value={this.state.selectedOption}
-                    className="select-container"
+                    className="grid__item"
                     placeholder={'Выберите этаж'}
                     options={options} />
         )

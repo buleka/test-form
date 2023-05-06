@@ -25,9 +25,10 @@ class ChoiceBuilding extends React.Component {
         ]
         return (
             <Select name={'building'}
+                    required={'required'}
                     onChange={this.handlerChange.bind(this)}
                     value={this.state.selectedOption}
-                    className="select-container"
+                    className="grid__item"
                     placeholder={'Выберите здание'}
                     options={options}/>
         )

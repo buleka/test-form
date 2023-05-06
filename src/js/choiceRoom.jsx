@@ -33,9 +33,10 @@ class ChoiceRoom extends React.Component{
         const options = this.renderOption();
         return(
             <Select name={'room'}
+                    required={'required'}
                     onChange={this.handlerChange.bind(this)}
                     value={this.state.selectedOption}
-                    className="select-container"
+                    className="grid__item"
                     placeholder={'Выберите переговорку'}
                     options={options} />
         )
