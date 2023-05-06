@@ -27,7 +27,6 @@ class Form extends React.Component {
                 return {name, value}
             })
 
-        toast("Вы записаны" + data);
         console.log(data);
     }
 
@@ -36,6 +35,8 @@ class Form extends React.Component {
         e.preventDefault();
         const form = e.target;
         this.serializeForm(form);
+        toast("Вы записаны");
+
     }
 
     handleFormReset(e){
